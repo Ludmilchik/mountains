@@ -1,0 +1,581 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Librefranklinbold";
+  src: local("Librefranklinbold"), local("Librefranklinbold"),
+    url("./fonts/Librefranklinbold.woff2") format("woff2"),
+    url("./fonts/Librefranklinbold.woff") format("woff"),
+    url("./fonts/Librefranklinbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Librefranklin";
+  src: local("Librefranklin"), local("Librefranklin"),
+    url("./fonts/Librefranklin.woff2") format("woff2"),
+    url("./fonts/Librefranklin.woff") format("woff"),
+    url("./fonts/Librefranklin.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tenorsans";
+  src: local("tenorsans"), local("tenorsans"),
+    url("./fonts/tenorsans.woff2") format("woff2"),
+    url("./fonts/tenorsans.woff") format("woff"),
+    url("./fonts/tenorsans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sourceserifpro";
+  src: local("Sourceserifpro"), local("Sourceserifpro"),
+    url("./fonts/Sourceserifpro.woff2") format("woff2"),
+    url("./fonts/Sourceserifpro.woff") format("woff"),
+    url("./fonts/Sourceserifpro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: #070707;
+  font-family: "Librefranklin";
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1183px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Librefranklin";
+  font-size: 34px;
+  text-align: center;
+}
+
+/* Header */
+
+header {
+  max-height: 90px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_title {
+  font-family: "Librefranklinbold";
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.nav__list {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.nav__item {
+  list-style: none;
+  margin-left: 44px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-family: "Librefranklin";
+  color: #0b0b0b;
+  transition: all 0.2s linear;
+}
+
+.nav__link:hover {
+  color: #828282;
+}
+
+/* Home */
+
+.home {
+  width: 100%;
+  margin: 60px auto;
+}
+
+.home__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home__image {
+  width: 45%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 50px;
+  margin-left: 10%;
+}
+
+.home__article {
+  width: 35%;
+}
+
+.home__chapter {
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.home__title {
+  font-family: "tenorsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.home__text {
+  font-family: "Sourceserifpro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.home__author {
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Frame */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin: 60px auto;
+}
+
+.frame__picture {
+  width: 387px;
+  margin: 0 5px 0 0;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 0px;
+}
+
+.frame__picture > img {
+  top: 0px;
+  width: 100%;
+  height: 254px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.frame__chapter {
+  top: 255px;
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.frame__text {
+  font-family: "tenorsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 17px auto 16.23px 0;
+}
+
+.frame__author {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 48.73px;
+}
+
+/* Latest posts */
+
+.latest__posts > p {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.posts__picture {
+  width: 24%;
+  margin: 0 5px 0 0;
+}
+
+.posts__picture > img {
+  top: 0px;
+  width: 100%;
+  height: 187px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  text-align: center;
+}
+
+.posts__chapter {
+  top: 255px;
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.posts__text {
+  font-family: "tenorsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 17px auto 16.23px 0;
+}
+
+.posts__author {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 48.73px;
+  margin-left: 5px;
+}
+
+button {
+  width: 205px;
+  height: 54px;
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  padding: 21px 26px 21px 26px;
+  box-sizing: border-box;
+}
+
+button:hover,
+button:focus {
+  background: rgb(245, 244, 244);
+  outline: 0;
+  border-color: darkgrey;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  transform: scale(1.05, 1.05);
+}
+
+/* featured__posts */
+
+.featured__posts {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.featured__posts > p {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured__picture {
+  width: 500px;
+  margin: 0 10px 0 0;
+}
+
+.featured__picture > img {
+  top: 0px;
+  width: 100%;
+  height: 387px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.featured__chapter {
+  top: 255px;
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.featured__text {
+  font-family: "tenorsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 17px auto 16.23px 0;
+}
+
+.featured__author {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 48.73px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 617px;
+  background: #141414;
+}
+
+.footer__conteiner {
+  height: 172px;
+  width: 80%;
+  margin-left: 12%;
+  margin-right: 10%;
+  border-bottom: 1px solid #4d4d4d;
+  border-radius: 0px;
+}
+
+.footer__title {
+  font-family: "Librefranklinbold";
+  font-size: 15px;
+  float: left;
+  margin-top: 7.5%;
+  color: #ffffff;
+}
+
+.footer__text {
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+  padding-top: 7.8%;
+  padding-left: 8%;
+}
+
+.footer__information {
+  width: 100%;
+  height: 294px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20%;
+  column-width: 75%;
+  column-gap: 2%;
+  margin-left: 12%;
+}
+
+.footer__card__1 {
+  max-width: 70%;
+}
+.footer__card__1 > h1 {
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+  margin-bottom: 3%;
+}
+
+.footer__categories {
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  column-count: 4;
+}
+
+.footer__categories > p {
+  margin: 0 0 15% 0;
+}
+
+.footer__animation {
+  margin-top: 0;
+}
+
+.footer__card__2 {
+  max-width: 25%;
+  margin-left: -5%;
+}
+
+.footer__send > h1 {
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+form {
+  margin-top: -20%;
+}
+
+input[type="text"] {
+  width: 160px;
+  height: 35px;
+  padding: 18px 23px 18px 24px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 8px solid #ffffff;
+  border-radius: 0px;
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.footer__button {
+  height: 50%;
+  width: 70px;
+  margin-left: -3%;
+  box-sizing: border-box;
+  background: #000000;
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__button:hover {
+  background: rgb(54, 53, 53);
+  outline: 0;
+  border-color: rgb(40, 40, 40);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  transform: scale(1.05, 1.05);
+}
+
+.footer__card__3 {
+  max-width: 23%;
+  height: 150px;
+  margin-top: -13%;
+  margin-left: 12%;
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  column-count: 2;
+}
+.footer__card__3 > h1 {
+  font-family: "Librefranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+  margin-bottom: 20.41px;
+}
+
+.footer__animation__1 {
+  margin-top: 0;
+}
+
+.footer__animation__2 {
+  font-size: 13px;
+}

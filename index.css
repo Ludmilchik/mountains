@@ -1,0 +1,63 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Librefranklinbold";
+  src: local("Librefranklinbold"), local("Librefranklinbold"),
+    url("./fonts/Librefranklinbold.woff2") format("woff2"),
+    url("./fonts/Librefranklinbold.woff") format("woff"),
+    url("./fonts/Librefranklinbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Librefranklin";
+  src: local("Librefranklin"), local("Librefranklin"),
+    url("./fonts/Librefranklin.woff2") format("woff2"),
+    url("./fonts/Librefranklin.woff") format("woff"),
+    url("./fonts/Librefranklin.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tenorsans";
+  src: local("tenorsans"), local("tenorsans"),
+    url("./fonts/tenorsans.woff2") format("woff2"),
+    url("./fonts/tenorsans.woff") format("woff"),
+    url("./fonts/tenorsans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sourceserifpro";
+  src: local("Sourceserifpro"), local("Sourceserifpro"),
+    url("./fonts/Sourceserifpro.woff2") format("woff2"),
+    url("./fonts/Sourceserifpro.woff") format("woff"),
+    url("./fonts/Sourceserifpro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: #070707;
+  font-family: "Librefranklin";
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1183px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Librefranklin";
+  font-size: 34px;
+  text-align: center;
+}
